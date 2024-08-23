@@ -56,7 +56,9 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              bgPrimary: "rgba(244, 244, 244, 1)",
+              arrowPrimary: "rgba(171, 239, 95, 1)",
+              btnPrimary: "rgba(171, 239, 95, .6)",
             },
             fontFamily: {
               Manrope: ["Manrope", "sans-serif"],
@@ -67,8 +69,106 @@
     </script>
   </head>
   <body class="font-Manrope">
-    <h1 class="underline font-bold text-2xl">
-      checking are evrything perfect for deploy...
-    </h1>
+    <header class="bg-gradient-to-t to-bgPrimary from-transparent">
+      <!-- nav bar start here -->
+      <nav class="container navbar pt-5 mx-auto px-4">
+        <div class="navbar-start">
+          <!-- nav brand -->
+          <a class="btn btn-ghost text-xl"
+            ><i
+              class="fa-sharp fa-light fa-arrow-up-long rotate-45 bg-arrowPrimary h-10 aspect-square rounded-full font-normal flex justify-center items-center"
+            ></i>
+            <h2 class="font-bold text-2xl">Rinterio</h2></a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <!-- nav items -->
+          <ul class="menu menu-horizontal px-1 text-gray-500">
+            <li><a class="font-extrabold">Home</a></li>
+            <li><a>Service</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="md:flex hidden items-center gap-4">
+            <a
+              ><i
+                class="fa-sharp fa-light fa-magnifying-glass bg-white h-10 aspect-square rounded-full text-black flex justify-center items-center hover:scale-95 cursor-pointer transition-all duration-150 ease-linear hover:shadow-sm"
+              ></i
+            ></a>
+            <a
+              ><i
+                class="fa-sharp fa-light fa-cart-shopping bg-white h-10 aspect-square rounded-full text-black flex justify-center items-center hover:scale-95 cursor-pointer transition-all duration-150 ease-linear hover:shadow-sm"
+              ></i
+            ></a>
+
+            <a class="btn rounded-full bg-arrowPrimary hover:bg-btnPrimary"
+              ><button class="text-lg font-extrabold lg:hidden">
+                Book Consult</button
+              ><i
+                class="fa-sharp fa-light fa-arrow-up-long rotate-45 bg-black h-7 aspect-square rounded-full font-extrabold text-white flex justify-center items-center"
+              ></i
+            ></a>
+          </div>
+          <!-- dropdown mobile bar here -->
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn bg-white rounded-full btn-ghost lg:hidden md:ml-2 h-12 aspect-square text-xl"
+            >
+              <i class="fa-sharp fa-solid fa-bars"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow -ml-52"
+            >
+              <li><a class="font-extrabold">Home</a></li>
+              <li><a>Service</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- dropdown mobile bar end here -->
+        </div>
+      </nav>
+      <!-- banner section start here -->
+      <section class="container mx-auto flex flex-col items-center px-4 gap-4">
+        <!-- hero img -->
+        <div>
+          <img
+            class="md:w-auto w-10/12 mx-auto"
+            src="./assets/banner.png"
+            alt=""
+          />
+        </div>
+        <!-- hero text content -->
+        <div class="text-center">
+          <h1
+            class="lg:text-[60px] md:text-5xl text-4xl md:leading-snug leading-tight font-extrabold lg:w-10/12 mx-auto"
+          >
+            A barn house of this design has a striking appearance
+          </h1>
+          <p class="text-sm mt-3 lg:w-8/12 md:w-11/12 mb-5 mx-auto">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <div>
+            <button
+              class="text-lg font-bold flex btn rounded-full bg-btnPrimary hover:bg-btnPrimary mx-auto md:w-auto w-full"
+            >
+              View Details
+              <i
+                class="fa-sharp fa-light fa-arrow-up-long rotate-45 bg-arrowPrimary h-7 aspect-square rounded-full font-bold text-black flex justify-center items-center"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
   </body>
 </html>
