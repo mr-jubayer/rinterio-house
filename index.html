@@ -459,9 +459,9 @@
       </section>
       <!-- article and news section   -->
       <section
-        class="container mx-auto px-4 pt-8 lg:pt-5 lg:pb-14 md:pb-8 pb-5"
+        class="container mx-auto px-4 pt-8 lg:pt-5 lg:pb-14 md:pb-12 pb-5"
       >
-        <!-- portfolio title -->
+        <!-- articel & news title -->
         <div class="text-center mt-10">
           <button class="bg-[#abef5f33] px-5 py-2 rounded-full font-bold mb-4">
             <i class="fa-light fa-arrow-right-long mr-2"></i>Rinterio News
@@ -599,6 +599,83 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- contact section -->
+      <section class="bg-[url('/assets/bg.jpg')] bg-no-repeat bg-cover">
+        <div
+          class="md:py-12 lg:py-14 py-5 container mx-auto px-4 lg:w-9/12 md:w-10/12"
+        >
+          <!-- contact title  -->
+          <div class="text-center">
+            <button
+              class="bg-[#abef5f33] px-5 py-2 rounded-full font-bold mb-4"
+            >
+              <i class="fa-light fa-arrow-right-long mr-2"></i>Let's Connect
+            </button>
+            <h2
+              class="md:text-3xl lg:text-4xl text-[28px] font-extrabold mx-auto mb-4"
+            >
+              Let's Discuss Next Project
+            </h2>
+            <p class="text-sm md:w-11/12 mx-auto lg:w-4/6 leading-6">
+              if you have any question about your project or feedback releted
+              please feel free to ask anything through below form. So let's make
+              interesting togater.
+            </p>
+          </div>
+          <!-- input box -->
+          <form class="grid grid-cols-2 mt-7 gap-5">
+            <label class="md:col-span-1 col-span-full">
+              <input
+                type="text"
+                placeholder="First Name*"
+                class="px-5 py-3 rounded-full w-full outline-none focus:ring-2 ring-arrowPrimary"
+                required
+              />
+            </label>
+            <label class="md:col-span-1 col-span-full">
+              <input
+                type="text"
+                placeholder="Last Name*"
+                class="px-5 py-3 rounded-full w-full outline-none focus:ring-2 ring-arrowPrimary"
+              />
+            </label>
+            <label class="md:col-span-1 col-span-full">
+              <input
+                type="number"
+                placeholder="Phone Number*"
+                class="px-5 py-3 rounded-full w-full outline-none focus:ring-2 ring-arrowPrimary"
+                required
+              />
+            </label>
+            <label class="md:col-span-1 col-span-full">
+              <input
+                type="email"
+                placeholder="Email Address*"
+                class="px-5 py-3 rounded-full w-full outline-none focus:ring-2 ring-arrowPrimary"
+                required
+              />
+            </label>
+            <label class="col-span-full">
+              <textarea
+                placeholder="write your message here"
+                rows="6"
+                class="px-5 py-3 md:rounded-3xl rounded-2xl w-full resize-none outline-none focus:ring-2 ring-arrowPrimary"
+                required
+              ></textarea>
+            </label>
+            <label class="col-span-full">
+              <button
+                class="text-lg font-bold flex btn rounded-full bg-arrowPrimary hover:bg-btnPrimary w-full"
+              >
+                View Details
+                <i
+                  class="fa-sharp fa-light fa-arrow-up-long rotate-45 bg-black h-7 aspect-square rounded-full font-medium text-white flex justify-center items-center"
+                ></i>
+              </button>
+            </label>
+          </form>
         </div>
       </section>
     </main>
