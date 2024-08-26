@@ -41,3 +41,25 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* meet our team */
+#overley {
+  background: linear-gradient(
+    to top,
+    #222,
+    transparent,
+    transparent,
+    transparent
+  );
+}
+#memberBox {
+  cursor: pointer;
+  overflow: hidden;
+}
+#memberBox:hover {
+  #overley {
+    background: linear-gradient(to top, #161616, transparent);
+  }
+  #hiddenContent {
+    bottom: 30px;
+  }
+}
