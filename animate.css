@@ -30,3 +30,14 @@ html {
 #portfolio-cards > div:hover img {
   transform: perspective(900px) rotateY(20deg);
 }
+/* contact section  */
+#contact {
+  background: linear-gradient(
+      to top,
+      rgba(245, 245, 245, 0.6),
+      rgba(245, 245, 245, 0.6)
+    ),
+    url(./assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
